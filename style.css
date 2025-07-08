@@ -1,0 +1,357 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://picsum.photos/id/10/1920/1080);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+ul li a.cta,
+.btn {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+h1 {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+.how-it-works {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin-bottom: 6rem;
+    font-weight: 300;
+}
+
+.steps {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.step {
+    width: 30%;
+}
+
+.step-number {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.meals {
+    padding: 0;
+}
+
+.meal-showcase {
+    display: flex;
+    width: 100%;
+}
+
+.meal-photo {
+    width: 25%;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1);
+}
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://picsum.photos/id/12/1920/1080);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.testimonial {
+    width: 33.33%;
+}
+
+blockquote {
+    padding: 2rem;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 4rem;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}
+.pricing {
+    padding: 8rem 0;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.plan {
+    width: 33.33%;
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 1rem;
+}
+
+.price span {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #555;
+}
+
+.price-per-meal {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 3rem;
+    display: block;
+    text-align: left;
+}
+
+.plan ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.contact-form {
+    padding: 8rem 0;
+}
+
+.contact {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.radio-group {
+    display: inline-block;
+    margin-right: 2rem;
+}
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 1200px) {
+    .hero {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 56.25%; /* 1 rem = 9px */
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* 1 rem = 8px */
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .steps,
+    .testimonial-container,
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step,
+    .testimonial,
+    .plan {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky ul li a {
+    color: #555;
+}
+
+.sticky .logo {
+    color: #555;
+}
+/* ANIMATIONS */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
